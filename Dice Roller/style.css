@@ -1,0 +1,15 @@
+table, th, tr, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: auto;
+	padding: 0.5em;
+}
+
+th {
+	font-size: 18px;
+	background-color: red;
+}
+
+#d4n, #d6n, #d8n, #d10n, #d12n, #d20n, #d100n {
+	text-align: center;
+}

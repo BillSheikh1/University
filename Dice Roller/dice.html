@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<div>
+
+<table>
+<th colspan="4">Dice</th>
+<tr>
+<td>Dice</td>
+<td>Number of Dice</td>
+<td>Button</td>
+<td>Total</td>
+</tr>
+<td>d4</td>
+<td><input type="text" id="d4n" size="13" maxlength="3" value="1" onchange="selectD4();" autocomplete="off">
+
+<!--<select id = "d4" onchange="selectD4();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+</td>
+<td>
+<input type="button" onclick="dice(n,4);" value = "Roll">
+</td>
+<td id = "answerD4">
+</td>
+</tr>
+<tr>
+<td>d6</td>
+<td><input type="text" id="d6n" size="13" maxlength="3" value="1" onchange="selectD6();" autocomplete="off">
+
+<!--<select id = "d6" onchange="selectD6();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+</td>
+<td>
+<input type="button" onclick="dice(n,6);" value="roll">
+</td>
+<td id = "answerD6">
+</td>
+</tr>
+<tr>
+<td>d8</td>
+<td><input type="text" id="d8n" size="13" maxlength="3" value="1" onchange="selectD8();" autocomplete="off">
+
+<!--<select id = "d8" onchange="selectD8();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+</td>
+<td>
+<input type="button" onclick="dice(n,8);" value="roll">
+</td>
+<td id = "answerD8">
+</td>
+</tr>
+<tr>
+<td>d10</td>
+<td><input type="text" id="d10n" size="13" maxlength="3" value="1" onchange="selectD10();" autocomplete="off">
+
+<!--<select id = "d10" onchange="selectD10();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+</td>
+<td>
+<input type="button" onclick="dice(n,10);" value= "roll">
+</td>
+<td id = "answerD10">
+</td>
+</tr>
+<tr>
+<td>d12</td>
+<td><input type="text" id="d12n" size="13" maxlength="3" value="1" onchange="selectD12();" autocomplete="off">
+
+<!--<select id = "d12" onchange="selectD12();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+<td>
+<input type="button" onclick="dice(n,12);" value="roll">
+</td>
+<td id = "answerD12">
+</td>
+</tr>
+<tr>
+<td>d20</td>
+<td><input type="text" id="d20n" size="13" maxlength="3" value="1" onchange="selectD20();" autocomplete="off">
+
+<!--<select id = "d20" onchange="selectD20();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+</td>
+<td>
+<input type = "button" onclick="dice(n,20);" value = "roll">
+</td>
+<td id = "answerD20">
+</td>
+</tr>
+<tr>
+<td>d100</td>
+<td><input type="text" id="d100n" size="13" maxlength="3" value="1" onchange="selectD100();" autocomplete="off">
+
+<!--<select id = "d100" onchange="selectD100();">
+	<option selected value=""></option>
+	<option value = "1">1</option>
+	<option value = "2">2</option>
+	<option value = "3">3</option>
+	<option value = "4">4</option>
+	<option value = "5">5</option>
+	<option value = "6">6</option>
+	<option value = "7">7</option>
+	<option value = "8">8</option>
+	<option value = "9">9</option>
+</select>-->
+</td>
+<td>
+<input type="button" onclick="dice(n,100);" value="roll">
+</td>
+<td id = "answerD100">
+</td>
+</tr>
+</table>
+
+</div>
+
+
+</body>
+
+</html>
