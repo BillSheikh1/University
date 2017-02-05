@@ -1,0 +1,15 @@
+table, tr, td {
+	border: 1px solid black;
+	margin: auto;
+	padding: 1em;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+#intro, #button {
+	text-align: center;
+	margin: 1em;
+}
